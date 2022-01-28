@@ -17,7 +17,7 @@
             "port": 443
         },
         "callback": "http://mercy.mercyx.repl.co/callback",
-        "clientID": "",
-        "secret": ""
+        "clientID": "931087360756682752",
+        "secret": "jamql9DTDiSNoirWzmkOACF2dF7nvvM1"
     }
   }
