@@ -115,3 +115,7 @@ client.autoresume = new Enmap({ name: "autoresume", dataDir: "./databases/infos"
     })
 //Start the Bot
 client.login(process.env.token)
+
+client.on('ready', () => {
+  require("./dashboard/index.js")(client)
+})
