@@ -62,7 +62,7 @@ module.exports = {
 				return interaction.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter(ee.footertext, ee.footericon)
+						.setFooter({ text : "ee.footertext, ee.footericon)}
 						.setTitle(`<:declined:780403017160982538> Your Voice Channel is full, I can't join!`)
 					],
 					ephemeral: true
@@ -71,7 +71,7 @@ module.exports = {
 				return interaction.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter(ee.footertext, ee.footericon)
+						.setFooter({ text : "ee.footertext, ee.footericon)}
 						.setTitle(`<:declined:780403017160982538> I am already connected somewhere else`)
 					],
 					ephemeral: true

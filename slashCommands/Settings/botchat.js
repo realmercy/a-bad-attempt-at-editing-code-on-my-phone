@@ -68,7 +68,7 @@ module.exports = {
             embeds: [
               new MessageEmbed()
               .setColor(ee.wrongcolor)
-              .setFooter(ee.footertext, ee.footericon)
+              .setFooter({ text : "ee.footertext, ee.footericon)}
               .setTitle(`${client.allEmojis.x} **This Channel is already a whitelisted Bot-Channel!**`)
             ],
           })
@@ -82,7 +82,7 @@ module.exports = {
           embeds: [
             new MessageEmbed()
             .setColor(ee.color)
-            .setFooter(ee.footertext, ee.footericon)
+            .setFooter({ text : "ee.footertext, ee.footericon)}
             .setTitle(`${client.allEmojis.check_mark} **The Channel \`${Channel.name}\` got added to the ${client.settings.get(guild.id, "djroles").length - 1} whitelisted Bot-Channels!**`)
             .addField(`🎧 **Bot-Channel${client.settings.get(guild.id, "botchannel").length > 1 ? "s": ""}:**`, `>>> ${djs}`, true)
           ],
@@ -94,7 +94,7 @@ module.exports = {
             embeds: [
               new MessageEmbed()
               .setColor(ee.wrongcolor)
-              .setFooter(ee.footertext, ee.footericon)
+              .setFooter({ text : "ee.footertext, ee.footericon)}
               .setTitle(`${client.allEmojis.x} **This Channel is not a whitelisted Bot-Channel yet!**`)
             ],
           })
@@ -108,7 +108,7 @@ module.exports = {
           embeds: [
             new MessageEmbed()
             .setColor(ee.color)
-            .setFooter(ee.footertext, ee.footericon)
+            .setFooter({ text : "ee.footertext, ee.footericon)}
             .setTitle(`${client.allEmojis.check_mark} **The Channel \`${Channel.name}\` got removed from the ${client.settings.get(guild.id, "djroles").length} whitelisted Bot-Channels!**`)
             .addField(`🎧 **Bot-Channel${client.settings.get(guild.id, "botchannel").length > 1 ? "s": ""}:**`, `>>> ${djs}`, true)
           ],

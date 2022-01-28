@@ -40,7 +40,7 @@ module.exports = {
 				return message.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter(ee.footertext, ee.footericon)
+						.setFooter({ text : "ee.footertext, ee.footericon)}
 						.setTitle(`${client.allEmojis.x} Join __my__ Voice Channel!`)
 						.setDescription(`<#${guild.me.voice.channel.id}>`)
 					],
@@ -58,7 +58,7 @@ module.exports = {
 					return message.reply({
 						embeds: [new MessageEmbed()
 							.setColor(ee.wrongcolor)
-							.setFooter(ee.footertext, ee.footericon)
+							.setFooter({ text : "ee.footertext, ee.footericon)}
 							.setTitle(`${client.allEmojis.x}**You are not a DJ and not the Song Requester!**`)
 							.setDescription(`**DJ-ROLES:**\n> ${check_if_dj(client, member, newQueue.songs[0])}`)
 						],
@@ -69,7 +69,7 @@ module.exports = {
 						embeds: [
 							new MessageEmbed()
 							.setColor(ee.wrongcolor)
-							.setFooter(ee.footertext, ee.footericon)
+							.setFooter({ text : "ee.footertext, ee.footericon)}
 							.setTitle(`${client.allEmojis.x} **Please add a Bassboost-Gain between 0 and 20!**`)
 						],
 					})
@@ -81,7 +81,7 @@ module.exports = {
 						embeds: [
 							new MessageEmbed()
 							.setColor(ee.wrongcolor)
-							.setFooter(ee.footertext, ee.footericon)
+							.setFooter({ text : "ee.footertext, ee.footericon)}
 							.setTitle(`${client.allEmojis.x} **The Bassboost Gain must be between 0 and 20!**`)
 						],
 					})
