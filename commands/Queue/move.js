@@ -140,7 +140,7 @@ module.exports = {
 					  .setColor(ee.color)
 					  .setTimestamp()
 					  .setTitle(`📑 Moved **${song.name}** to the **\`${position}th\`** Place right after **_${newQueue.songs[position - 1].name}_!**`)
-					  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+					  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 				})
 			} catch (e) {
 				console.log(e.stack ? e.stack : e)

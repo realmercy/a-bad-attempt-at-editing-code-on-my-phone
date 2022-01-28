@@ -124,7 +124,7 @@ module.exports = {
 					  .setColor(ee.color)
 					  .setTimestamp()
 					  .setTitle(`🗑 **Removed ${amount} Song${amount > 1 ?"s": ""} out of the Queue!**`)
-					  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+					  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 				})
 			} catch (e) {
 				console.log(e.stack ? e.stack : e)

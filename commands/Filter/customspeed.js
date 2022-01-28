@@ -98,7 +98,7 @@ module.exports = {
 					  .setColor(ee.color)
 					  .setTimestamp()
 					  .setTitle(`♨️ **Set the Speed to ${speed_amount}!**`)
-					  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+					  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 				})
 			} catch (e) {
 				console.log(e.stack ? e.stack : e)

@@ -241,7 +241,7 @@ module.exports = (client) => {
                     .setColor(ee.color)
                     .setTimestamp()
                     .setTitle(`⏹ **Stopped playing and left the Channel**`)
-                    .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+                    .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
                   }).then(interaction => {
                     if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
                       setTimeout(()=>{
@@ -265,7 +265,7 @@ module.exports = (client) => {
                   .setColor(ee.color)
                   .setTimestamp()
                   .setTitle(`⏭ **Skipped to the next Song!**`)
-                  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+                  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
               }).then(interaction => {
                 if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
                   setTimeout(()=>{
@@ -322,7 +322,7 @@ module.exports = (client) => {
                     .setColor(ee.color)
                     .setTimestamp()
                     .setTitle(`⏹ **Stopped playing and left the Channel!**`)
-                    .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+                    .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
                 }).then(interaction => {
                   if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
                     setTimeout(()=>{
@@ -386,7 +386,7 @@ module.exports = (client) => {
                     .setColor(ee.color)
                     .setTimestamp()
                     .setTitle(`⏸ **Paused!**`)
-                    .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+                    .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
                 }).then(interaction => {
                   if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
                     setTimeout(()=>{
@@ -410,7 +410,7 @@ module.exports = (client) => {
                     .setColor(ee.color)
                     .setTimestamp()
                     .setTitle(`▶️ **Resumed!**`)
-                    .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+                    .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
                 }).then(interaction => {
                   if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
                     setTimeout(()=>{
@@ -480,7 +480,7 @@ module.exports = (client) => {
                   .setColor(ee.color)
                   .setTimestamp()
                   .setTitle(`${newQueue.autoplay ? `${client.allEmojis.check_mark} **Enabled Autoplay**`: `${client.allEmojis.x} **Disabled Autoplay**`}`)
-                  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+                  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
                 }).then(interaction => {
                   if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
                     setTimeout(()=>{
@@ -539,7 +539,7 @@ module.exports = (client) => {
                   .setColor(ee.color)
                   .setTimestamp()
                   .setTitle(`🔀 **Shuffled ${newQueue.songs.length} Songs!**`)
-                  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+                  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
               }).then(interaction => {
                 if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
                   setTimeout(()=>{
@@ -602,7 +602,7 @@ module.exports = (client) => {
                   .setColor(ee.color)
                   .setTimestamp()
                   .setTitle(`${newQueue.repeatMode == 1 ? `${client.allEmojis.check_mark} **Enabled Song-Loop**`: `${client.allEmojis.x} **Disabled Song-Loop**`}`)
-                  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+                  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
               }).then(interaction => {
                 if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
                   setTimeout(()=>{
@@ -669,7 +669,7 @@ module.exports = (client) => {
                   .setColor(ee.color)
                   .setTimestamp()
                   .setTitle(`${newQueue.repeatMode == 2 ? `${client.allEmojis.check_mark} **Enabled Queue-Loop**`: `${client.allEmojis.x} **Disabled Queue-Loop**`}`)
-                  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+                  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
                 }).then(interaction => {
                   if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
                     setTimeout(()=>{
@@ -732,7 +732,7 @@ module.exports = (client) => {
                   .setColor(ee.color)
                   .setTimestamp()
                   .setTitle(`⏩ **Forwarded the song for \`10 Seconds\`!**`)
-                  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+                  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
               }).then(interaction => {
                 if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
                   setTimeout(()=>{
@@ -796,7 +796,7 @@ module.exports = (client) => {
                   .setColor(ee.color)
                   .setTimestamp()
                   .setTitle(`⏪ **Rewinded the song for \`10 Seconds\`!**`)
-                  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+                  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
               }).then(interaction => {
                 if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
                   setTimeout(()=>{
@@ -1297,7 +1297,7 @@ module.exports = (client) => {
                 .setColor(ee.color)
                 .setTimestamp()
                 .setTitle(`⏹ **Stopped playing and left the Channel**`)
-                .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
+                .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
                   dynamic: true
                 }))
               ]
@@ -1312,7 +1312,7 @@ module.exports = (client) => {
               .setColor(ee.color)
               .setTimestamp()
               .setTitle(`⏭ **Skipped to the next Song!**`)
-              .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
+              .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
                 dynamic: true
               }))
             ]
@@ -1327,7 +1327,7 @@ module.exports = (client) => {
             .setColor(ee.color)
             .setTimestamp()
             .setTitle(`⏹ **Stopped playing and left the Channel**`)
-            .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
+            .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
               dynamic: true
             }))
           ]
@@ -1346,7 +1346,7 @@ module.exports = (client) => {
               .setColor(ee.color)
               .setTimestamp()
               .setTitle(`▶️ **Resumed!**`)
-              .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
+              .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
                 dynamic: true
               }))
             ]
@@ -1360,7 +1360,7 @@ module.exports = (client) => {
               .setColor(ee.color)
               .setTimestamp()
               .setTitle(`⏸ **Paused!**`)
-              .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
+              .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
                 dynamic: true
               }))
             ]
@@ -1377,7 +1377,7 @@ module.exports = (client) => {
             .setColor(ee.color)
             .setTimestamp()
             .setTitle(`${newQueue.autoplay ? `${client.allEmojis.check_mark} **Enabled Autoplay**`: `${client.allEmojis.x} **Disabled Autoplay**`}`)
-            .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
+            .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
               dynamic: true
             }))
           ]
@@ -1396,7 +1396,7 @@ module.exports = (client) => {
             .setColor(ee.color)
             .setTimestamp()
             .setTitle(`🔀 **Shuffled ${newQueue.songs.length} Songs!**`)
-            .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
+            .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
               dynamic: true
             }))
           ]
@@ -1416,7 +1416,7 @@ module.exports = (client) => {
             .setColor(ee.color)
             .setTimestamp()
             .setTitle(`${newQueue.repeatMode == 1 ? `${client.allEmojis.check_mark} **Enabled Song Loop**`: `${client.allEmojis.x} **Disabled Song Loop**`}`)
-            .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
+            .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
               dynamic: true
             }))
           ]
@@ -1436,7 +1436,7 @@ module.exports = (client) => {
             .setColor(ee.color)
             .setTimestamp()
             .setTitle(`${newQueue.repeatMode == 2 ? `${client.allEmojis.check_mark} **Enabled Queue Loop**`: `${client.allEmojis.x} **Disabled Queue Loop**`}`)
-            .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
+            .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
               dynamic: true
             }))
           ]
@@ -1455,7 +1455,7 @@ module.exports = (client) => {
             .setColor(ee.color)
             .setTimestamp()
             .setTitle(`⏩ **Forwarded the song for \`10 Seconds\`!**`)
-            .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
+            .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
               dynamic: true
             }))
           ]
@@ -1474,7 +1474,7 @@ module.exports = (client) => {
             .setColor(ee.color)
             .setTimestamp()
             .setTitle(`⏪ **Rewinded the song for \`10 Seconds\`!**`)
-            .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({
+            .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
               dynamic: true
             }))
           ]

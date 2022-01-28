@@ -99,7 +99,7 @@ module.exports = {
 					  .setColor(ee.color)
 					  .setTimestamp()
 					  .setTitle(`♨️ **Set a Bassboost to ${bass_gain}!**`)
-					  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+					  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 				})
 			} catch (e) {
 				console.log(e.stack ? e.stack : e)

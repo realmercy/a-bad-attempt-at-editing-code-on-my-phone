@@ -106,7 +106,7 @@ module.exports = {
 						  .setColor(ee.color)
 						  .setTimestamp()
 						  .setTitle(`${client.allEmojis.x} **Disabled the Loop Mode!**`)
-						  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+						  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 					})
 				} else if (newQueue.repeatMode == 1) {
 					message.reply({
@@ -114,7 +114,7 @@ module.exports = {
 						  .setColor(ee.color)
 						  .setTimestamp()
 						  .setTitle(`🔁 **Enabled the __Song__-Loop** ||(Disabled the **Queue-Loop**)||`)
-						  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+						  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 						})
 				} else {
 					message.reply({
@@ -122,7 +122,7 @@ module.exports = {
 						  .setColor(ee.color)
 						  .setTimestamp()
 						  .setTitle(`🔂 **Enabled the __Queue__-Loop!** ||(Disabled the **Song-Loop**)||`)
-						  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+						  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 						})
 				}
 			} catch (e) {

@@ -63,7 +63,7 @@ module.exports = {
 						  .setColor(ee.color)
 						  .setTimestamp()
 						  .setTitle(`⏹ **Stopped playing and left the Channel!**`)
-						  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+						  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 					})
 				}
 				if (check_if_dj(client, member, newQueue.songs[0])) {
@@ -84,7 +84,7 @@ module.exports = {
 					  .setColor(ee.color)
 					  .setTimestamp()
 					  .setTitle(`⏹ **Stopped playing and left the Channel!**`)
-					  .setFooter(`💢 Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
+					  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 				})
 				return
 			} catch (e) {
