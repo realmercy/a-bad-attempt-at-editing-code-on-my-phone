@@ -57,7 +57,7 @@ module.exports = {
         embeds: [
           new MessageEmbed()
           .setColor(ee.color)
-          .setFooter({ text : "ee.footertext, ee.footericon)}
+          .setFooter(process.env.footer)
           .setTitle(`${client.allEmojis.check_mark} **The new Prefix is now: \`${newPrefix}\`**`)
         ],
       })

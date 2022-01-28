@@ -74,7 +74,7 @@ blues, oldgaming, pop, remixes, rock, strange-fruits-gaming
 				return interaction.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter({ text : "ee.footertext, ee.footericon)}
+						.setFooter(process.env.footer)
 						.setTitle(`<:declined:780403017160982538> Your Voice Channel is full, I can't join!`)
 					],
 					ephemeral: true
@@ -83,7 +83,7 @@ blues, oldgaming, pop, remixes, rock, strange-fruits-gaming
 				return interaction.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter({ text : "ee.footertext, ee.footericon)}
+						.setFooter(process.env.footer)
 						.setTitle(`<:declined:780403017160982538> I am already connected somewhere else`)
 					],
 					ephemeral: true

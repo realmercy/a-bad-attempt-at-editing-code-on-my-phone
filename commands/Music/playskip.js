@@ -51,7 +51,7 @@ module.exports = {
 				return message.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter({ text : "ee.footertext, ee.footericon)}
+						.setFooter(process.env.footer)
 						.setTitle(`${client.allEmojis.x} Your Voice Channel is full, I can't join!`)
 					],
 				});
@@ -59,7 +59,7 @@ module.exports = {
 				return message.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter({ text : "ee.footertext, ee.footericon)}
+						.setFooter(process.env.footer)
 						.setTitle(`${client.allEmojis.x} I am already connected somewhere else`)
 					],
 				});
@@ -68,7 +68,7 @@ module.exports = {
 				return message.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter({ text : "ee.footertext, ee.footericon)}
+						.setFooter(process.env.footer)
 						.setTitle(`${client.allEmojis.x} **Please add a Search Query!**`)
 						.setDescription(`**Usage:**\n> \`${client.settings.get(message.guild.id, "prefix")}playskip <Search/Link>\``)
 					],
@@ -94,7 +94,7 @@ module.exports = {
 						return message.reply({
 							embeds: [new MessageEmbed()
 								.setColor(ee.wrongcolor)
-								.setFooter({ text : "ee.footertext, ee.footericon)}
+								.setFooter(process.env.footer)
 								.setTitle(`${client.allEmojis.x} **You are not a DJ and not the Song Requester!**`)
 								.setDescription(`**DJ-ROLES:**\n> ${check_if_dj(client, member, queue.songs[0])}`)
 							],

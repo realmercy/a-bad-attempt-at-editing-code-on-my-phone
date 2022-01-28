@@ -49,7 +49,7 @@ module.exports = {
 				return message.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter({ text : "ee.footertext, ee.footericon)}
+						.setFooter(process.env.footer)
 						.setTitle(`${client.allEmojis.x} Your Voice Channel is full, I can't join!`)
 					],
 				});
@@ -57,7 +57,7 @@ module.exports = {
 				return message.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter({ text : "ee.footertext, ee.footericon)}
+						.setFooter(process.env.footer)
 						.setTitle(`${client.allEmojis.x} I am already connected somewhere else`)
 					],
 				});
@@ -66,7 +66,7 @@ module.exports = {
 				return message.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter({ text : "ee.footertext, ee.footericon)}
+						.setFooter(process.env.footer)
 						.setTitle(`${client.allEmojis.x} **Please add a Search Query!**`)
 						.setDescription(`**Usage:**\n> \`${client.settings.get(message.guild.id, "prefix")}play <Search/Link>\``)
 					],

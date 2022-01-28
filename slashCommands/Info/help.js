@@ -102,7 +102,7 @@ module.exports = {
         ephemeral: true,
         embeds: [new MessageEmbed()
           .setColor(ee.wrongcolor)
-          .setFooter({ text : "ee.footertext, ee.footericon)}
+          .setFooter(process.env.footer)
           .setTitle(`${client.allEmojis.x} ERROR | An error occurred`)
           .setDescription(`\`\`\`${e.message ? String(e.message).substr(0, 2000) : String(e).substr(0, 2000)}\`\`\``)
         ]

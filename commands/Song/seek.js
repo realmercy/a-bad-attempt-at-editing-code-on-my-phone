@@ -69,7 +69,7 @@ module.exports = {
 						embeds: [
 							new MessageEmbed()
 							.setColor(ee.wrongcolor)
-							.setFooter({ text : "ee.footertext, ee.footericon)}
+							.setFooter(process.env.footer)
 							.setTitle(`${client.allEmojis.x} **Please add a Seek Number Position-Duration!**`)
 							.setDescription(`**Usage:**\n> \`${client.settings.get(guild.id, "prefix")}seek <Duration_in_Sec>\``)
 						],
@@ -86,7 +86,7 @@ module.exports = {
 					return message.reply({
 						embeds: [new MessageEmbed()
 							.setColor(ee.wrongcolor)
-							.setFooter({ text : "ee.footertext, ee.footericon)}
+							.setFooter(process.env.footer)
 							.setTitle(`${client.allEmojis.x} **You are not a DJ and not the Song Requester!**`)
 							.setDescription(`**DJ-ROLES:**\n> ${check_if_dj(client, member, newQueue.songs[0])}`)
 						],

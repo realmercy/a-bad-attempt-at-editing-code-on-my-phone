@@ -157,7 +157,7 @@ module.exports = (client) => {
             if(i.customId != `10` && check_if_dj(client, i.member, client.distube.getQueue(i.guild.id).songs[0])) {
               return i.reply({embeds: [new MessageEmbed()
                 .setColor(ee.wrongcolor)
-                .setFooter({ text : "ee.footertext, ee.footericon)}
+                .setFooter(process.env.footer)
                 .setTitle(`${client.allEmojis.x} **You are not a DJ and not the Song Requester!**`)
                 .setDescription(`**DJ-ROLES:**\n${check_if_dj(client, i.member, client.distube.getQueue(i.guild.id).songs[0])}`)
               ],
@@ -945,7 +945,7 @@ module.exports = (client) => {
           updateMusicSystem(queue, true);
           queue.textChannel.send({
             embeds: [
-              new MessageEmbed().setColor(ee.color).setFooter({ text : "ee.footertext, ee.footericon)}
+              new MessageEmbed().setColor(ee.color).setFooter(process.env.footer)
               .setTitle(`⛔️ LEFT QUEUE GOT DELETED`)
               .setDescription(`:headphones: **The QUEUE got deleted**`)
               .setTimestamp()
@@ -1168,7 +1168,7 @@ module.exports = (client) => {
       return message.reply({
         embeds: [new MessageEmbed()
           .setColor(ee.wrongcolor)
-          .setFooter({ text : "ee.footertext, ee.footericon)}
+          .setFooter(process.env.footer)
           .setTitle(`${client.allEmojis.x} Your Voice Channel is full, I can't join!`)
         ],
       });
@@ -1176,7 +1176,7 @@ module.exports = (client) => {
       return message.reply({
         embeds: [new MessageEmbed()
           .setColor(ee.wrongcolor)
-          .setFooter({ text : "ee.footertext, ee.footericon)}
+          .setFooter(process.env.footer)
           .setTitle(`${client.allEmojis.x} I am already connected somewhere else`)
         ],
       });
@@ -1253,7 +1253,7 @@ module.exports = (client) => {
 				return message.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter({ text : "ee.footertext, ee.footericon)}
+						.setFooter(process.env.footer)
 						.setTitle(`${client.allEmojis.x} Your Voice Channel is full, I can't join!`)
 					],
 				});
@@ -1261,7 +1261,7 @@ module.exports = (client) => {
 				return message.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter({ text : "ee.footertext, ee.footericon)}
+						.setFooter(process.env.footer)
 						.setTitle(`${client.allEmojis.x} I am already connected somewhere else`)
 					],
 				});
@@ -1280,7 +1280,7 @@ module.exports = (client) => {
         return interaction.reply({
           embeds: [new MessageEmbed()
             .setColor(ee.wrongcolor)
-            .setFooter({ text : "ee.footertext, ee.footericon)}
+            .setFooter(process.env.footer)
             .setTitle(`${client.allEmojis.x} **You are not a DJ and not the Song Requester!**`)
             .setDescription(`**DJ-ROLES:**\n${check_if_dj(client, member, newQueue.songs[0])}`)
           ],

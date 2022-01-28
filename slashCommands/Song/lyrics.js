@@ -47,7 +47,7 @@ module.exports = {
 				return interaction.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter({ text : "ee.footertext, ee.footericon)}
+						.setFooter(process.env.footer)
 						.setTitle(`${client.allEmojis.x} Join __my__ Voice Channel!`)
 						.setDescription(`<#${guild.me.voice.channel.id}>`)
 					],
@@ -66,7 +66,7 @@ module.exports = {
 				return interaction.reply({
 					embeds: [new MessageEmbed()
 						.setColor(ee.wrongcolor)
-						.setFooter({ text : "ee.footertext, ee.footericon)}
+						.setFooter(process.env.footer)
 						.setTitle(`${client.allEmojis.x} Lyrics are disabled!`)
 						.setDescription(`**Due to legal Reasons, Lyrics are disabled and won't work for an unknown amount of time!** :cry:`)
 					],

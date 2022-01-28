@@ -37,7 +37,7 @@ module.exports = {
           embeds: [
             new MessageEmbed()
             .setColor(ee.wrongcolor)
-            .setFooter({ text : "ee.footertext, ee.footericon)}
+            .setFooter(process.env.footer)
             .addField("**All available Filters:**", Object.keys(FiltersSettings).map(f => `\`${f}\``).join(", ") + "\n\n**Note:**\n> *All filters, starting with custom are having there own Command, please use them to define what custom amount u want!*")
           ],
         })
@@ -45,7 +45,7 @@ module.exports = {
           embeds: [
             new MessageEmbed()
             .setColor(ee.wrongcolor)
-            .setFooter({ text : "ee.footertext, ee.footericon)}
+            .setFooter(process.env.footer)
             .addField("**All available Filters:**", Object.keys(FiltersSettings).map(f => `\`${f}\``).join(", ") + "\n\n**Note:**\n> *All filters, starting with custom are having there own Command, please use them to define what custom amount u want!*")
             .addField("**All __current__ Filters:**", newQueue.filters && newQueue.filters.length > 0 ? newQueue.filters.map(f => `\`${f}\``).join(", ") : `${client.allEmojis.x}`)
           ],

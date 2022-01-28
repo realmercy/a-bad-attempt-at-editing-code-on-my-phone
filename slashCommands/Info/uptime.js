@@ -37,7 +37,7 @@ module.exports = {
         ephemeral: true,
         embeds: [new MessageEmbed()
           .setColor(ee.color)
-          .setFooter({ text : "ee.footertext, ee.footericon)}
+          .setFooter(process.env.footer)
           .setTitle(`:white_check_mark: **${client.user.username}** is since:\n ${duration(client.uptime).map(t=>`\`${t}\``).join(", ")} online`)
         ]
       });

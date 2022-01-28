@@ -34,7 +34,7 @@ module.exports = {
         ephemeral: true,
         embeds: [new MessageEmbed()
           .setColor(ee.color)
-          .setFooter({ text : "ee.footertext, ee.footericon)}
+          .setFooter(process.env.footer)
           .setTitle(`:gear: **[${client.commands.size}] Commands**`)
           .setDescription(`:gear: **[${client.categories.length}] Categories**\n\n:gear: **[${client.slashCommands.size + client.slashCommands.map(d => d.options).flat().length}] Slash Commands**\n\n`)
         ]
