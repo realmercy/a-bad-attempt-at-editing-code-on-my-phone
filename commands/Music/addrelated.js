@@ -67,7 +67,7 @@ module.exports = {
 				})
 				//update it without a response!
 				let thenewmsg = await message.reply({
-					content: `🔍 Searching Related Song for... **${newQueue.songs[0].name}**`,
+					content: `<a:eyes_shaking:933706564068577330> Searching Related Song for...**${newQueue.songs[0].name}**`,
 				}).catch(e => {
 					console.log(e)
 				})

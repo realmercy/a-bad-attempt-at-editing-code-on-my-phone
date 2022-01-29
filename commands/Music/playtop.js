@@ -81,7 +81,7 @@ module.exports = {
 			const Text = args.join(" "); //same as in StringChoices //RETURNS STRING 
 			//update it without a response!
 			let newmsg = await message.reply({
-				content: `🔍 Searching... \`\`\`${Text}\`\`\``,
+				content: `<a:eyes_shaking:933706564068577330> Searching...`,
 			}).catch(e => {
 				console.log(e)
 			})

@@ -68,7 +68,7 @@ module.exports = {
 				})
 				//update it without a response!
 				await interaction.reply({
-					content: `🔍 Searching Related Song for... **${newQueue.songs[0].name}**`,
+					content: `<a:eyes_shaking:933706564068577330> Searching Related Song for...**${newQueue.songs[0].name}**`,
 					ephemeral: true
 				});
 				await newQueue.addRelatedSong();

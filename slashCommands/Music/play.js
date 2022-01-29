@@ -81,7 +81,7 @@ module.exports = {
 			const Text = options.getString("song"); //same as in StringChoices //RETURNS STRING 
 			//update it without a response!
 			await interaction.reply({
-				content: `🔍 Searching... \`\`\`${Text}\`\`\``,
+				content: `<a:eyes_shaking:933706564068577330> Searching...`,
 				ephemeral: true
 			});
 			try {
