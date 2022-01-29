@@ -22,7 +22,7 @@ module.exports = {
         embeds: [
           new MessageEmbed().setColor(ee.color)
           .setFooter(process.env.footer)
-          .setDescription(`[**Click here to invite me!**](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands)\n\n||[**Click here to invite me __without__ Slash Commands!**](https://discord.com/api/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot)||`)
+          .setDescription(`What part of the word "private bot" you cant seem to understand, anyway this is a private bot you cant invite it. `)
         ]
       });
     } catch (e) {
