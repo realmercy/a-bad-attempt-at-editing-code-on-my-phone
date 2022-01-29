@@ -100,7 +100,7 @@ module.exports = {
 					embeds: [new MessageEmbed()
 					  .setColor(ee.color)
 					  .setTimestamp()
-					  .setTitle(`🔊 **Changed the Volume to \`${volume}\`!**`)
+					  .setTitle(`<a:pepe_jamming:933708762206830592> **Changed the Volume to \`${volume}\`!**`)
 					  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 				})
 			} catch (e) {

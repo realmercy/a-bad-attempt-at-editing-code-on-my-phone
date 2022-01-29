@@ -42,7 +42,7 @@ module.exports = {
           size: 4096
         }) : `https://imgur.com/jLvYdb4.png`)
         .setTitle(`Start Listening to Music, by connecting to a Voice Channel and sending either the **SONG LINK** or **SONG NAME** in this Channel!`)
-        .setDescription(`> *I support <:Youtube:840260133686870036> Youtube, <:Spotify:846090652231663647> Spotify, <:soundcloud:825095625884434462> Soundcloud and direct MP3 Links!*`)
+        .setDescription(`> *I support <a:eyes_shaking:933706564068577330> Youtube, <:Spotify:846090652231663647> Spotify, <:soundcloud:825095625884434462> Soundcloud and direct MP3 Links!*`)
       ]
       var Emojis = [
         `0️⃣`,
@@ -79,7 +79,7 @@ module.exports = {
           }))
         ]),
         new MessageActionRow().addComponents([
-          new MessageButton().setStyle('PRIMARY').setCustomId('Skip').setEmoji(`⏭`).setLabel(`Skip`).setDisabled(),
+          new MessageButton().setStyle('PRIMARY').setCustomId('Skip').setEmoji(`<a:catJAM:936865945073369139>`).setLabel(`Skip`).setDisabled(),
           new MessageButton().setStyle('DANGER').setCustomId('Stop').setEmoji(`🏠`).setLabel(`Stop`).setDisabled(),
           new MessageButton().setStyle('SECONDARY').setCustomId('Pause').setEmoji('⏸').setLabel(`Pause`).setDisabled(),
           new MessageButton().setStyle('SUCCESS').setCustomId('Autoplay').setEmoji('🔁').setLabel(`Autoplay`).setDisabled(),
@@ -88,8 +88,8 @@ module.exports = {
         new MessageActionRow().addComponents([
           new MessageButton().setStyle('SUCCESS').setCustomId('Song').setEmoji(`🔁`).setLabel(`Song`).setDisabled(),
           new MessageButton().setStyle('SUCCESS').setCustomId('Queue').setEmoji(`🔂`).setLabel(`Queue`).setDisabled(),
-          new MessageButton().setStyle('PRIMARY').setCustomId('Forward').setEmoji('⏩').setLabel(`+10 Sec`).setDisabled(),
-          new MessageButton().setStyle('PRIMARY').setCustomId('Rewind').setEmoji('⏪').setLabel(`-10 Sec`).setDisabled(),
+          new MessageButton().setStyle('PRIMARY').setCustomId('Forward').setEmoji('<a:spongebobshuffle:935802259483267073>').setLabel(`+10 Sec`).setDisabled(),
+          new MessageButton().setStyle('PRIMARY').setCustomId('Rewind').setEmoji('<a:rewind:933708264145821706>').setLabel(`-10 Sec`).setDisabled(),
           new MessageButton().setStyle('PRIMARY').setCustomId('Lyrics').setEmoji('📝').setLabel(`Lyrics`).setDisabled(),
         ]),
       ]

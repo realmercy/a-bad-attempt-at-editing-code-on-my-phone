@@ -93,7 +93,7 @@ module.exports = {
 					embeds: [new MessageEmbed()
 					  .setColor(ee.color)
 					  .setTimestamp()
-					  .setTitle(`⏩ **Rewinded the song for \`${seekNumber} Seconds\`!**`)
+					  .setTitle(`<a:spongebobshuffle:935802259483267073> **Rewinded the song for \`${seekNumber} Seconds\`!**`)
 					  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 				})
 			} catch (e) {

@@ -83,7 +83,7 @@ module.exports = {
 					embeds: [new MessageEmbed()
 					  .setColor(ee.color)
 					  .setTimestamp()
-					  .setTitle(`▶️ **Now Playing the Previous Played Track!**`)
+					  .setTitle(`<a:youtube:930118175331332116> **Now Playing the Previous Played Track!**`)
 					  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 				})
 			} catch (e) {

@@ -79,7 +79,7 @@ module.exports = {
 					embeds: [new MessageEmbed()
 					  .setColor(ee.color)
 					  .setTimestamp()
-					  .setTitle(`⏭ **Skipped to the next Song!**`)
+					  .setTitle(`<a:catJAM:936865945073369139> **Skipped to the next Song!**`)
 					  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 				})
 			} catch (e) {

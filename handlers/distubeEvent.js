@@ -264,7 +264,7 @@ module.exports = (client) => {
                 embeds: [new MessageEmbed()
                   .setColor(ee.color)
                   .setTimestamp()
-                  .setTitle(`⏭ **Skipped to the next Song!**`)
+                  .setTitle(`<a:catJAM:936865945073369139> **Skipped to the next Song!**`)
                   .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
               }).then(interaction => {
                 if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
@@ -409,7 +409,7 @@ module.exports = (client) => {
                   embeds: [new MessageEmbed()
                     .setColor(ee.color)
                     .setTimestamp()
-                    .setTitle(`▶️ **Resumed!**`)
+                    .setTitle(`<a:youtube:930118175331332116> **Resumed!**`)
                     .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
                 }).then(interaction => {
                   if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
@@ -731,7 +731,7 @@ module.exports = (client) => {
                 embeds: [new MessageEmbed()
                   .setColor(ee.color)
                   .setTimestamp()
-                  .setTitle(`⏩ **Forwarded the song for \`10 Seconds\`!**`)
+                  .setTitle(`<a:spongebobshuffle:935802259483267073> **Forwarded the song for \`10 Seconds\`!**`)
                   .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
               }).then(interaction => {
                 if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
@@ -795,7 +795,7 @@ module.exports = (client) => {
                 embeds: [new MessageEmbed()
                   .setColor(ee.color)
                   .setTimestamp()
-                  .setTitle(`⏪ **Rewinded the song for \`10 Seconds\`!**`)
+                  .setTitle(`<a:rewind:933708264145821706> **Rewinded the song for \`10 Seconds\`!**`)
                   .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
               }).then(interaction => {
                 if(newQueue.textChannel.id === client.settings.get(newQueue.id, `music.channel`)){
@@ -848,7 +848,7 @@ module.exports = (client) => {
           .setTitle(`${client.allEmojis.check_mark} **Song added to the Queue!**`)
           .setDescription(`👍 Song: [\`${song.name}\`](${song.url})  -  \`${song.formattedDuration}\``)
           .addField(`⌛ **Estimated Time:**`, `\`${queue.songs.length - 1} song${queue.songs.length > 0 ? `s` : ``}\` - \`${(Math.floor((queue.duration - song.duration) / 60 * 100) / 100).toString().replace(`.`, `:`)}\``)
-          .addField(`🌀 **Queue Duration:**`, `\`${queue.formattedDuration}\``)
+          .addField(`<a:xandog:933575695735603211><a:xan:933575657710055514> **Queue Duration:**`, `\`${queue.formattedDuration}\``)
           ]
         }).then(msg => {
           if(queue.textChannel.id === client.settings.get(queue.id, `music.channel`)){
@@ -877,7 +877,7 @@ module.exports = (client) => {
           .setTitle(`${client.allEmojis.check_mark} **Playlist added to the Queue!**`)
           .setDescription(`👍 Playlist: [\`${playlist.name}\`](${playlist.url ? playlist.url : ``})  -  \`${playlist.songs.length} Song${playlist.songs.length > 0 ? `s` : ``}\``)
           .addField(`⌛ **Estimated Time:**`, `\`${queue.songs.length - - playlist.songs.length} song${queue.songs.length > 0 ? `s` : ``}\` - \`${(Math.floor((queue.duration - playlist.duration) / 60 * 100) / 100).toString().replace(`.`, `:`)}\``)
-          .addField(`🌀 **Queue Duration:**`, `\`${queue.formattedDuration}\``)
+          .addField(`<a:xandog:933575695735603211><a:xan:933575657710055514> **Queue Duration:**`, `\`${queue.formattedDuration}\``)
         ]
         }).then(msg => {
           if(queue.textChannel.id === client.settings.get(queue.id, `music.channel`)){
@@ -1311,7 +1311,7 @@ module.exports = (client) => {
             embeds: [new MessageEmbed()
               .setColor(ee.color)
               .setTimestamp()
-              .setTitle(`⏭ **Skipped to the next Song!**`)
+              .setTitle(`<a:catJAM:936865945073369139> **Skipped to the next Song!**`)
               .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
                 dynamic: true
               }))
@@ -1345,7 +1345,7 @@ module.exports = (client) => {
             embeds: [new MessageEmbed()
               .setColor(ee.color)
               .setTimestamp()
-              .setTitle(`▶️ **Resumed!**`)
+              .setTitle(`<a:youtube:930118175331332116> **Resumed!**`)
               .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
                 dynamic: true
               }))
@@ -1454,7 +1454,7 @@ module.exports = (client) => {
           embeds: [new MessageEmbed()
             .setColor(ee.color)
             .setTimestamp()
-            .setTitle(`⏩ **Forwarded the song for \`10 Seconds\`!**`)
+            .setTitle(`<a:spongebobshuffle:935802259483267073> **Forwarded the song for \`10 Seconds\`!**`)
             .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
               dynamic: true
             }))
@@ -1473,7 +1473,7 @@ module.exports = (client) => {
           embeds: [new MessageEmbed()
             .setColor(ee.color)
             .setTimestamp()
-            .setTitle(`⏪ **Rewinded the song for \`10 Seconds\`!**`)
+            .setTitle(`<a:rewind:933708264145821706> **Rewinded the song for \`10 Seconds\`!**`)
             .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({
               dynamic: true
             }))
@@ -1598,7 +1598,7 @@ module.exports = (client) => {
         size: 4096
       }) : `https://imgur.com/jLvYdb4.png`)
       .setTitle(`Start Listening to Music, by connecting to a Voice Channel and sending either the **SONG LINK** or **SONG NAME** in this Channel!`)
-      .setDescription(`> *I support <:Youtube:840260133686870036> Youtube, <:Spotify:846090652231663647> Spotify, <:soundcloud:825095625884434462> Soundcloud and direct MP3 Links!*`)
+      .setDescription(`> *I support <a:eyes_shaking:933706564068577330> Youtube, <:Spotify:846090652231663647> Spotify, <:soundcloud:825095625884434462> Soundcloud and direct MP3 Links!*`)
     ]
     let newQueue = client.distube.getQueue(guild.id);
     var djs = client.settings.get(guild.id, `djroles`);
@@ -1611,12 +1611,12 @@ module.exports = (client) => {
         .setFooter(`Requested by: ${newQueue.songs[0].user?.tag}`, newQueue.songs[0].user?.displayAvatarURL({
           dynamic: true
         }))
-        .addField(`💡 Requested by:`, `>>> ${newQueue.songs[0].user}`, true)
-        .addField(`🔊 Volume:`, `>>> \`${newQueue.volume} %\``, true)
-        .addField(`${newQueue.playing ? `♾ Loop (▶️):` : `⏸️ Paused:`}`, newQueue.playing ? `>>> ${newQueue.repeatMode ? newQueue.repeatMode === 2 ? `${client.allEmojis.check_mark}\` Queue\`` : `${client.allEmojis.check_mark} \`Song\`` : `${client.allEmojis.x}`}` : `>>> ${client.allEmojis.check_mark}`, true)
-        .addField(`❔ Filter${newQueue.filters.length > 0 ? `s`: ``}:`, `>>> ${newQueue.filters && newQueue.filters.length > 0 ? `${newQueue.filters.map(f=>`\`${f}\``).join(`, `)}` : `${client.allEmojis.x}`}`, newQueue.filters.length > 4 ? false : true)
+        .addField(`<a:light:933404963147767958>Requested by:`, `>>> ${newQueue.songs[0].user}`, true)
+        .addField(`<a:pepe_jamming:933708762206830592> Volume:`, `>>> \`${newQueue.volume} %\``, true)
+        .addField(`${newQueue.playing ? `<a:loop:933579552591077397> Loop (<a:youtube:930118175331332116>):` : `⏸️ Paused:`}`, newQueue.playing ? `>>> ${newQueue.repeatMode ? newQueue.repeatMode === 2 ? `${client.allEmojis.check_mark}\` Queue\`` : `${client.allEmojis.check_mark} \`Song\`` : `${client.allEmojis.x}`}` : `>>> ${client.allEmojis.check_mark}`, true)
+        .addField(`<a:catjamhigh:933582172827312169> Filter${newQueue.filters.length > 0 ? `s`: ``}:`, `>>> ${newQueue.filters && newQueue.filters.length > 0 ? `${newQueue.filters.map(f=>`\`${f}\``).join(`, `)}` : `${client.allEmojis.x}`}`, newQueue.filters.length > 4 ? false : true)
         .addField(`🎧 DJ-Role${client.settings.get(newQueue.id, `djroles`).length > 1 ? `s`: ``}:`, `>>> ${djs}`, newQueue.filters.length > 4 ? false : true)
-        .addField(`⏱ Duration:`, `\`${newQueue.formattedCurrentTime}\` ${createBar(newQueue.songs[0].duration, newQueue.currentTime, 13)} \`${newQueue.songs[0].formattedDuration}\``)
+        .addField(`<a:timer:933576434688086076> Duration:`, `\`${newQueue.formattedCurrentTime}\` ${createBar(newQueue.songs[0].duration, newQueue.currentTime, 13)} \`${newQueue.songs[0].formattedDuration}\``)
         .setAuthor(`${newQueue.songs[0].name}`, `https://images-ext-1.discordapp.net/external/DkPCBVBHBDJC8xHHCF2G7-rJXnTwj_qs78udThL8Cy0/%3Fv%3D1/https/cdn.discordapp.com/emojis/859459305152708630.gif`, newQueue.songs[0].url)
       delete embeds[1].description;
       delete embeds[1].title;
@@ -1665,14 +1665,14 @@ module.exports = (client) => {
         }
       }))
     var stopbutton = new MessageButton().setStyle('DANGER').setCustomId('Stop').setEmoji(`🏠`).setLabel(`Stop`).setDisabled()
-    var skipbutton = new MessageButton().setStyle('PRIMARY').setCustomId('Skip').setEmoji(`⏭`).setLabel(`Skip`).setDisabled();
+    var skipbutton = new MessageButton().setStyle('PRIMARY').setCustomId('Skip').setEmoji(`<a:catJAM:936865945073369139>`).setLabel(`Skip`).setDisabled();
     var shufflebutton = new MessageButton().setStyle('PRIMARY').setCustomId('Shuffle').setEmoji('🔀').setLabel(`Shuffle`).setDisabled();
     var pausebutton = new MessageButton().setStyle('SECONDARY').setCustomId('Pause').setEmoji('⏸').setLabel(`Pause`).setDisabled();
     var autoplaybutton = new MessageButton().setStyle('SUCCESS').setCustomId('Autoplay').setEmoji('🔁').setLabel(`Autoplay`).setDisabled();
     var songbutton = new MessageButton().setStyle('SUCCESS').setCustomId('Song').setEmoji(`🔁`).setLabel(`Song`).setDisabled();
     var queuebutton = new MessageButton().setStyle('SUCCESS').setCustomId('Queue').setEmoji(`🔂`).setLabel(`Queue`).setDisabled();
-    var forwardbutton = new MessageButton().setStyle('PRIMARY').setCustomId('Forward').setEmoji('⏩').setLabel(`+10 Sec`).setDisabled();
-    var rewindbutton = new MessageButton().setStyle('PRIMARY').setCustomId('Rewind').setEmoji('⏪').setLabel(`-10 Sec`).setDisabled();
+    var forwardbutton = new MessageButton().setStyle('PRIMARY').setCustomId('Forward').setEmoji('<a:spongebobshuffle:935802259483267073>').setLabel(`+10 Sec`).setDisabled();
+    var rewindbutton = new MessageButton().setStyle('PRIMARY').setCustomId('Rewind').setEmoji('<a:rewind:933708264145821706>').setLabel(`-10 Sec`).setDisabled();
     var lyricsbutton = new MessageButton().setStyle('PRIMARY').setCustomId('Lyrics').setEmoji('📝').setLabel(`Lyrics`).setDisabled();
     if (!leave && newQueue && newQueue.songs[0]) {
       skipbutton = skipbutton.setDisabled(false);
@@ -1688,7 +1688,7 @@ module.exports = (client) => {
         autoplaybutton = autoplaybutton.setStyle('SECONDARY')
       }
       if (newQueue.paused) {
-        pausebutton = pausebutton.setStyle('SUCCESS').setEmoji('▶️').setLabel(`Resume`)
+        pausebutton = pausebutton.setStyle('SUCCESS').setEmoji('<a:youtube:930118175331332116>').setLabel(`Resume`)
       }
       switch(newQueue.repeatMode) {
         default: { // == 0
@@ -1741,35 +1741,35 @@ module.exports = (client) => {
     if(!newTrack) return new MessageEmbed().setColor(ee.wrongcolor).setTitle(`NO SONG FOUND?!?!`)
     var embed = new MessageEmbed().setColor(ee.color)
       .setDescription(`See the [Queue on the **DASHBOARD** Live!](${require(`../dashboard/settings.json`).website.domain}/queue/${newQueue.id})`)
-      .addField(`💡 Requested by:`, `>>> ${newTrack.user}`, true)
-      .addField(`⏱ Duration:`, `>>> \`${newQueue.formattedCurrentTime} / ${newTrack.formattedDuration}\``, true)
-      .addField(`🌀 Queue:`, `>>> \`${newQueue.songs.length} song(s)\`\n\`${newQueue.formattedDuration}\``, true)
-      .addField(`🔊 Volume:`, `>>> \`${newQueue.volume} %\``, true)
-      .addField(`♾ Loop:`, `>>> ${newQueue.repeatMode ? newQueue.repeatMode === 2 ? `${client.allEmojis.check_mark}\` Queue\`` : `${client.allEmojis.check_mark} \`Song\`` : `${client.allEmojis.x}`}`, true)
-      .addField(`↪️ Autoplay:`, `>>> ${newQueue.autoplay ? `${client.allEmojis.check_mark}` : `${client.allEmojis.x}`}`, true)
-      .addField(`❔ Download Song:`, `>>> [\`Click here\`](${newTrack.streamURL})`, true)
-      .addField(`❔ Filter${newQueue.filters.length > 0 ? `s`: ``}:`, `>>> ${newQueue.filters && newQueue.filters.length > 0 ? `${newQueue.filters.map(f=>`\`${f}\``).join(`, `)}` : `${client.allEmojis.x}`}`, newQueue.filters.length > 1 ? false : true)
+      .addField(`<a:light:933404963147767958>Requested by:`, `>>> ${newTrack.user}`, true)
+      .addField(`<a:timer:933576434688086076> Duration:`, `>>> \`${newQueue.formattedCurrentTime} / ${newTrack.formattedDuration}\``, true)
+      .addField(`<a:xandog:933575695735603211><a:xan:933575657710055514> Queue:`, `>>> \`${newQueue.songs.length} song(s)\`\n\`${newQueue.formattedDuration}\``, true)
+      .addField(`<a:pepe_jamming:933708762206830592> Volume:`, `>>> \`${newQueue.volume} %\``, true)
+      .addField(`<a:loop:933579552591077397> Loop:`, `>>> ${newQueue.repeatMode ? newQueue.repeatMode === 2 ? `${client.allEmojis.check_mark}\` Queue\`` : `${client.allEmojis.check_mark} \`Song\`` : `${client.allEmojis.x}`}`, true)
+      .addField(`<a:youtube:930118175331332116>️ Autoplay:`, `>>> ${newQueue.autoplay ? `${client.allEmojis.check_mark}` : `${client.allEmojis.x}`}`, true)
+      
+      .addField(`<a:catjamhigh:933582172827312169> Filter${newQueue.filters.length > 0 ? `s`: ``}:`, `>>> ${newQueue.filters && newQueue.filters.length > 0 ? `${newQueue.filters.map(f=>`\`${f}\``).join(`, `)}` : `${client.allEmojis.x}`}`, newQueue.filters.length > 1 ? false : true)
 			.addField(`🎧 DJ-Role${client.settings.get(newQueue.id, `djroles`).length > 1 ? `s`: ``}:`, `>>> ${djs}`, client.settings.get(newQueue.id, `djroles`).length > 1 ? false : true)
       .setAuthor(`${newTrack.name}`, `https://images-ext-1.discordapp.net/external/DkPCBVBHBDJC8xHHCF2G7-rJXnTwj_qs78udThL8Cy0/%3Fv%3D1/https/cdn.discordapp.com/emojis/859459305152708630.gif`, newTrack.url)
       .setThumbnail(`https://img.youtube.com/vi/${newTrack.id}/mqdefault.jpg`)
       .setFooter(`💯 ${newTrack.user.tag}`, newTrack.user.displayAvatarURL({
         dynamic: true
       }));
-    let skip = new MessageButton().setStyle('PRIMARY').setCustomId('1').setEmoji(`⏭`).setLabel(`Skip`)
+    let skip = new MessageButton().setStyle('PRIMARY').setCustomId('1').setEmoji(`<a:catJAM:936865945073369139>`).setLabel(`Skip`)
     let stop = new MessageButton().setStyle('DANGER').setCustomId('2').setEmoji(`🏠`).setLabel(`Stop`)
     let pause = new MessageButton().setStyle('SECONDARY').setCustomId('3').setEmoji('⏸').setLabel(`Pause`)
     let autoplay = new MessageButton().setStyle('SUCCESS').setCustomId('4').setEmoji('🔁').setLabel(`Autoplay`)
     let shuffle = new MessageButton().setStyle('PRIMARY').setCustomId('5').setEmoji('🔀').setLabel(`Shuffle`)
     if (!newQueue.playing) {
-      pause = pause.setStyle('SUCCESS').setEmoji('▶️').setLabel(`Resume`)
+      pause = pause.setStyle('SUCCESS').setEmoji('<a:youtube:930118175331332116>').setLabel(`Resume`)
     }
     if (newQueue.autoplay) {
       autoplay = autoplay.setStyle('SECONDARY')
     }
     let songloop = new MessageButton().setStyle('SUCCESS').setCustomId('6').setEmoji(`🔁`).setLabel(`Song`)
     let queueloop = new MessageButton().setStyle('SUCCESS').setCustomId('7').setEmoji(`🔂`).setLabel(`Queue`)
-    let forward = new MessageButton().setStyle('PRIMARY').setCustomId('8').setEmoji('⏩').setLabel(`+10 Sec`)
-    let rewind = new MessageButton().setStyle('PRIMARY').setCustomId('9').setEmoji('⏪').setLabel(`-10 Sec`)
+    let forward = new MessageButton().setStyle('PRIMARY').setCustomId('8').setEmoji('<a:spongebobshuffle:935802259483267073>').setLabel(`+10 Sec`)
+    let rewind = new MessageButton().setStyle('PRIMARY').setCustomId('9').setEmoji('<a:rewind:933708264145821706>').setLabel(`-10 Sec`)
     let lyrics = new MessageButton().setStyle('PRIMARY').setCustomId('10').setEmoji('📝').setLabel(`Lyrics`).setDisabled();
     if (newQueue.repeatMode === 0) {
       songloop = songloop.setStyle('SUCCESS')

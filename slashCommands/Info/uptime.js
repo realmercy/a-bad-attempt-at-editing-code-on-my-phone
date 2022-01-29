@@ -38,7 +38,7 @@ module.exports = {
         embeds: [new MessageEmbed()
           .setColor(ee.color)
           .setFooter(process.env.footer)
-          .setTitle(`:white_check_mark: **${client.user.username}** is since:\n ${duration(client.uptime).map(t=>`\`${t}\``).join(", ")} online`)
+          .setTitle(`<a:ok:930121961542144030> **${client.user.username}** is since:\n ${duration(client.uptime).map(t=>`\`${t}\``).join(", ")} online`)
         ]
       });
     } catch (e) {

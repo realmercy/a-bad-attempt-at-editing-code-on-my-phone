@@ -78,7 +78,7 @@ module.exports = {
 					embeds: [new MessageEmbed()
 					  .setColor(ee.color)
 					  .setTimestamp()
-					  .setTitle(`🔃 **Replaying the current Song!**`)
+					  .setTitle(`<a:loop:933579552591077397> **Replaying the current Song!**`)
 					  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 				})
 			} catch (e) {

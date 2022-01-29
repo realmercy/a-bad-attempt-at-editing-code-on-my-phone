@@ -35,7 +35,7 @@ module.exports = {
         embeds: [
           new MessageEmbed().setColor(ee.color)
           .setFooter(process.env.footer)
-          .setDescription(`**WHEN YOU USE THE SOURCE CODE, __GIVE CREDITS__!** :heart:\n\n[Link to Source](https://github.com/Tomato6966/Musicium)\n\n[Youtube Tutorial]()`)
+          .setDescription(`to know how this bot was made and/or was customized kindly ask user <@906148826878996501> about that as he's the one who customized the bot and is hosting it <a:kisses:935804487778594836>`)
         ]
       });
     } catch (e) {
