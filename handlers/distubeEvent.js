@@ -909,7 +909,7 @@ module.exports = (client) => {
       .on(`finishSong`, (queue, song) => {
         var embed = new MessageEmbed().setColor(ee.color)
         .setAuthor(`${song.name}`, `https://cdn.discordapp.com/attachments/883978730261860383/883978741892649000/847032838998196234.png`, song.url)
-        .setDescription(`See the [Queue on the **DASHBOARD** Live!](${require(`../dashboard/settings.json`).website.domain}/${queue.id})`)
+        .setDescription(process.env.header)
         .setThumbnail(`https://img.youtube.com/vi/${song.id}/mqdefault.jpg`)
         .setFooter(`💯 ${song.user.tag}\n⛔️ SONG ENDED!`, song.user.displayAvatarURL({
           dynamic: true
@@ -1740,7 +1740,7 @@ module.exports = (client) => {
     else djs.slice(0, 15).join(`, `);
     if(!newTrack) return new MessageEmbed().setColor(ee.wrongcolor).setTitle(`NO SONG FOUND?!?!`)
     var embed = new MessageEmbed().setColor(ee.color)
-      .setDescription(`See the [Queue on the **DASHBOARD** Live!](${require(`../dashboard/settings.json`).website.domain}/queue/${newQueue.id})`)
+      .setDescription(process.env.header)
       .addField(`<a:light:933404963147767958>Requested by:`, `>>> ${newTrack.user}`, true)
       .addField(`<a:timer:933576434688086076> Duration:`, `>>> \`${newQueue.formattedCurrentTime} / ${newTrack.formattedDuration}\``, true)
       .addField(`<a:xandog:933575695735603211><a:xan:933575657710055514> Queue:`, `>>> \`${newQueue.songs.length} song(s)\`\n\`${newQueue.formattedDuration}\``, true)

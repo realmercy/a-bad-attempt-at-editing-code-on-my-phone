@@ -4,7 +4,6 @@ const {
 const config = require("../../botconfig/config.json");
 var ee = require("../../botconfig/embed.json");
 const settings = require("../../botconfig/settings.json");
-const websiteSettings = require("../../dashboard/settings.json");
 module.exports = {
   name: "dashboard", //the command name for execution & for helpcmd [OPTIONAL]
   cooldown: 1, //the command cooldown for execution & for helpcmd [OPTIONAL]
@@ -26,7 +25,7 @@ module.exports = {
         embeds: [
           new MessageEmbed()
           .setColor(ee.color)
-          .setDescription(`> **Website:** ${websiteSettings.website.domain}/\n\n> **Dashboard:** ${websiteSettings.website.domain}/dashboard\n\n> **ServerQueues:** ${websiteSettings.website.domain}/queuedashboard\n\n> **Current Queue:** ${websiteSettings.website.domain}/queue/${guild.id}`)
+          .setDescription(process.env.header)
         ]
       });
     } catch (e) {
