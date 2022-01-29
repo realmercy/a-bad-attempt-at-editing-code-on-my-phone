@@ -123,7 +123,7 @@ module.exports = {
 					embeds: [new MessageEmbed()
 					  .setColor(ee.color)
 					  .setTimestamp()
-					  .setTitle(`🗑 **Removed ${amount} Song${amount > 1 ?"s": ""} out of the Queue!**`)
+					  .setTitle(`<a:tantrum:935745107523665992> **Removed ${amount} Song${amount > 1 ?"s": ""} out of the Queue!**`)
 					  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 				})
 			} catch (e) {

@@ -78,7 +78,7 @@ module.exports = {
 					embeds: [new MessageEmbed()
 					  .setColor(ee.color)
 					  .setTimestamp()
-					  .setTitle(`🗑 **Cleared the Queue and deleted ${amount} Songs!**`)
+					  .setTitle(`<a:tantrum:935745107523665992> **Cleared the Queue and deleted ${amount} Songs!**`)
 					  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 				})
 			} catch (e) {

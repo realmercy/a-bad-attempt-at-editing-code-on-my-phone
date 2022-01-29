@@ -68,7 +68,7 @@ module.exports = {
 					embeds: [new MessageEmbed()
 					  .setColor(ee.color)
 					  .setTimestamp()
-					  .setTitle(`🗑 **Cleared all Filters!**`)
+					  .setTitle(`<a:tantrum:935745107523665992> **Cleared all Filters!**`)
 					  .setFooter(` Action by: ${member.user.tag}`, member.user.displayAvatarURL({dynamic: true}))]
 				})
 			} catch (e) {
