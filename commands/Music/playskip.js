@@ -101,7 +101,7 @@ module.exports = {
 						});
 					}
 				}
-				await client.distube.playVoiceChannel(channel, Text, options)
+				await client.distube.play(channel, Text, options)
 				//Edit the reply
 				newmsg.edit({
 					content: `${queue?.songs?.length > 0 ? "<a:catJAM:936865945073369139> Skipping to" : "🎶 Now Playing"}: \`\`\`css\n${Text}\n\`\`\``,

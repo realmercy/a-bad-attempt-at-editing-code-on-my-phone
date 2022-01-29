@@ -104,7 +104,7 @@ module.exports = {
 						});
 					}
 				}
-				await client.distube.playVoiceChannel(channel, Text, options)
+				await client.distube.play(channel, Text, options)
 				//Edit the reply
 				newmsg.edit({
 					content: `${queue?.songs?.length > 0 ? "👍 Added to the Top of the Queue" : "🎶 Now Playing"}: \`\`\`css\n${Text}\n\`\`\``,
