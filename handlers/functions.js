@@ -757,7 +757,7 @@ function onCoolDown(message, command) {
    */
   function change_status(client) {
     try {
-      client.user.setActivity(`music in ${client.guilds.cache.size} servers`, {
+      client.user.setActivity(`music in ${client.guilds.name} servers`, {
         type: "PLAYING",
       });
     } catch (e) {
